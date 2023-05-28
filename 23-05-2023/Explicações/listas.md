@@ -32,7 +32,7 @@ pessoas = {
     "Arthie": 21
 }
 
-# Ou assim também (Mais recomendado nesse exemplo)
+# Ou assim também (Mas recomendado nesse exemplo)
 pessoas = [
     {"nome": "Arthur", "idade": 19},
     {"nome": "Luiz", "idade": 18},

@@ -33,35 +33,3 @@ dados2 = pegarDadosPessoa("Arthie", pessoas)
 print(dados1)
 print(dados2)
 ```
-
-## Módulos
-Se você quiser colocar todas as funções em um arquivo separado você pode ! 
-
-Basta criar um arquivo com formato `.py` e coloca-las lá.
-
-```python
-# utils.py
-def pegarDadosPessoa(nome, pessoas):
-    for pessoa in pessoas:
-        if pessoa["nome"] == nome:
-            break
-    return pessoa
-```
-Após isso devemos importar o que fizemos
-```python
-# main.py
-from utils import pegarDadosPessoa
-
-pessoas = [
-    {"nome": "Arthur", "idade": 19},
-    {"nome": "Luiz", "idade": 18},
-    {"nome": "Duda", "idade": 20},
-    {"nome": "Arthie", "idade": 21},
-]
-
-dados1 = pegarDadosPessoa("Duda", pessoas)
-dados2 = pegarDadosPessoa("Arthie", pessoas)
-
-print(dados1)
-print(dados2)
-```
